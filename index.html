@@ -2,35 +2,73 @@
 <html lang="pt">
     <head>
         <title>Edimburgo</title>
+        <link rel="icon" href="/images/cidade.ico">
         <meta charset="utf-8">
         <meta name="author" content="Bruno Soares">
         <meta name="description" content="Website sobre Edimburgo">
         <meta name="keywords" content="edin">
+        <style>
+            body {
+                text-align: center;
+                background-color: #f7f2f2
+            }
+            h1{
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                text-align: center;
+            }
+            .header {
+                background-color: #c5c5c5;
+                position: relative;
+                height: auto;
+                width: auto;
+                border-bottom: 2px solid #33362e;
+            }
+            .footer {
+                background-color: #c5c5c5;
+                position: relative;
+                padding: 1px 0px 1px 0px;
+                margin-bottom: -10px;
+                margin-left: -10px;
+                margin-right: -8px;
+                border-top: 2px solid #33362e;
+            }
+           .center {
+                text-align: center;
+                list-style-position: inside;
+            }
+            .footerpadding {
+                padding-left: 100px;
+            }
+
+        </style>
     </head>
     <body>
-        <h1>Edimburgo</h1>
+        <div class="header">
+            <h1>Edimburgo</h1>
+        </div>
+        <h2><u>Introdução</u></h2>
         <img src="images/edimburgo.jpg" alt="Edimburgo">
-        <br>
-        <h2>Introdução</h2>
         <p>Capital da Escócia</p>
         <p>
-            <b><a href="index.html">Introdução</a></b>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimedia</a>
-            <a href="info.html">Informação</a>
-        </p>
-        <p>
-            <ol>
-                <li>A página de <a href="index.html">Introdução mostra uma breve texto da cidade</a></li>
-                <li>A página de <a href="local.html">Localização mostra a Localização da cidade</a></li>
-                <li>A página de <a href="multimedia.html">Multimedia mostra um video da cidade</a></li>
-                <li>A página de <a href="info.html">Informação mostra a Informação da cidade</a></li>
+            <ol class="center">
+                <li>A página da <a href="index.html">Introdução</a> inclui uma breve Introdução da cidade.</li>
+                <li>A página da <a href="local.html">Localização</a> inclui a localização da cidade, assim como algumas informações
+                    geograficas destas e um mapa da Cidade.</li>
+                <li>A página da <a href="multimedia.html">Multimedia</a> inclui um video acerca da cidade.</li>
+                <li>A página da <a href="info.html">Informação</a> inclui os dados e as informações da cidade.</li>
             </ol>
         </p>
-        <br>
-        <img src="images/wordcloud_edin.png" alt="wordcloud_edin">
-        <br>
-        <img src="images/wordcloud_edin2.png" alt="wordcloud_edin">
+        <p>
+            <img src="images/wordcloud_edin.png" alt="wordcloud_edin">
+        </p>
+        <footer class="footer">
+        <p>
+            <b><a class="footerpadding" href="index.html">Introdução</a></b>
+            <a class="footerpadding" href="local.html">Localização</a>
+            <a class="footerpadding" href="multimedia.html">Multimedia</a>
+            <a class="footerpadding" href="info.html">Informação</a>
+        </footer>
     </body>
-    
 </html>

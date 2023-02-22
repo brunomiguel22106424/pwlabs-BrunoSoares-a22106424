@@ -1,25 +1,102 @@
 <!DOCTYPE html>
 <html lang="pt">
     <head>
-        <title>Info</title>
-        <meta charset="utf-8">
-        <meta name="author" content="Bruno Soares">
-        <meta name="description" content="Website sobre Edimburgo">
-        <meta name="keywords" content="edin">
+      <title>Informação</title>
+      <link rel="icon" href="/images/cidade.ico">
+      <meta charset="utf-8">
+      <meta name="author" content="Bruno Soares">
+      <meta name="description" content="Website sobre Edimburgo">
+      <meta name="keywords" content="edin">
+      <style>
+        .header {
+            background-color: #c5c5c5;
+            position: relative;
+            height: auto;
+            width: auto;
+            border-bottom: 2px solid #33362e;
+            }
+        .footer {
+          background-color: #c5c5c5;
+          position: relative;
+          padding: 1px 0px 1px 0px;
+          margin-bottom: auto;
+          margin-left: -10px;
+          margin-right: -8px;
+          border-top: 2px solid #33362e;
+        }
+        .footerpadding {
+          padding-left: 100px;
+        }
+        .center{
+          margin-left: auto;
+          margin-right: auto;
+        }
+        body {
+          text-align: center;
+          background-color: #f7f2f2
+        }
+        h1 {
+          padding: 5px;
+          text-align: center;
+        }
+        table, td, th {
+          border-collapse: collapse;
+          border: 1px solid #33362e;
+          text-align: left;
+          padding: 5px;
+        }
+        th{
+          text-align: center;
+        }
+      </style>
     </head>
     <body>
+      <div class="header">
         <h1>Edimburgo</h1>
-        <img src="edimburgo.jpg" alt="Edimburgo">
-        <br>
-        <h2>Info</h2>
-        <p>Capital da Escócia</p>
+      </div>
+      <h2><u>Info</u></h2>
+      <img src="images/edimburgo.jpg" alt="Edimburgo">
+      <p>Capital da Escócia</p>
+      <p>
+        <table class="center">
+          <tr>
+            <th><u>Atrações</u></th>
+            <th><u>Comidas</u></th>
+            <th><u>Produtos</u></th>
+          </tr>
+          <tr>
+            <td>Castelo de Edimburgo</td>
+            <td>Haggis</td>
+            <td>Kilt</td>
+          </tr>
+          <tr>
+            <td>Royal Mile</td>
+            <td>Black Pudding</td>
+            <td>Whisky</td>
+          </tr>
+          <tr>
+            <td>Palácio Holyroodhouse</td>
+            <td>Stovies</td>
+            <td>Quaich</td>
+          </tr>
+          <tr>
+            <td>National Museum of Scotland</td>
+            <td>Fish & Chips</td>
+            <td>Chá</td>
+          </tr>
+          <tr>
+            <td>Holyrood Park & Arthur’s Seat</td>
+            <td>Scotch broth</td>
+            <td>Tartan</td>
+          </tr>
+        </table>
+      </p>
+      <footer class="footer">
         <p>
-            <a href="index.html">Introdução</a>
-            <a href="local.html">Localização</a>
-            <a href="multimedia.html">Multimedia</a>
-            <b><a href="info.html">Informação</a></p></b>
-        </p>
-        
+            <b><a class="footerpadding" href="index.html">Introdução</a></b>
+            <a class="footerpadding" href="local.html">Localização</a>
+            <a class="footerpadding" href="multimedia.html">Multimedia</a>
+            <a class="footerpadding" href="info.html">Informação</a>
+        </footer>
     </body>
-    
 </html>
