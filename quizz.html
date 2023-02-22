@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>Edimburgo</title>
+        <link rel="icon" href="/images/cidade.ico">
+        <meta charset="utf-8">
+        <meta name="author" content="Bruno Soares">
+        <meta name="description" content="Website sobre Edimburgo">
+        <meta name="keywords" content="edin">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            input[type=text], select {
+                width: 100%;
+                padding: 5px 2px;
+                margin-top: 5px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=email], select {
+                width: 100%;
+                padding: 5px 2px;
+                margin-top: 5px;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box;
+            }
+            input[type=submit] {
+                width: 100%;
+                background-color: #4179c3;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+            input[type=submit]:hover {
+                background-color: #6d99cb;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Edimburgo</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <b><a href="index.html">Introdução</a></b>
+                    <a href="local.html">Localização</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="info.html">Informação</a>
+                    <b><a href="quizz.html">Quizz</a></b>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Quizz</h2>
+                <article>
+                    <form method="POST" action="mailto: brunomiguel.bcs@gmail.com" enctype="multipart/form-data">
+                        <fieldset>
+                        <legend>Quizz sobre Edimburgo:</legend>
+                        <p>
+                            Este quiz terá várias perguntas sobre a cidade! O objetivo é responder ao quiz e ver o quão conhece a cidade :)
+                        </p>
+                        <fieldset>
+                            <legend>Info</legend>
+                            <p>Nome: <br>
+                                <input type="text" name="nome" placeholder="Insira nome"></p>
+                            <p>Apelido: <br>
+                                <input type="text" name="apelido" placeholder="Insira apelido"></p>
+                            <p>Email: <br>
+                                <input type="email" name= "email" height="100px" placeholder="Insira email"></p>
+                            </fieldset>
+                            <fieldset >
+                                <legend>Perguntas</legend>
+                                <p>
+                                    Em qual país fica Edimburgo?
+                                </p>
+                                <p>
+                                    <input type="radio" id="Inglaterra" name="pais" value="Inglaterra" class="stylequestions">
+                                    <label for="inglaterra">Inglaterra</label><br>
+                                    <input type="radio" id="escocia" name="pais" value="Escócia" class="stylequestions">
+                                    <label for="escocia">Escócia</label><br>
+                                    <input type="radio" id="irlanda" name="pais" value="Irlanda" class="stylequestions">
+                                    <label for="irlanda">Irlanda</label>
+                                </p>
+                                <p>
+                                    Quais são as linguas faladas em Edimburgo?
+                                </p>
+                                <p>
+                                    <input type="checkbox" id="escoces" name="escoces" value="Escocês" class="stylequestions">
+                                    <label for="escoces"> Escocês</label><br>
+                                    <input type="checkbox" id="ingles" name="ingles" value="Inglês" class="stylequestions">
+                                    <label for="ingles"> Inglês</label><br>
+                                    <input type="checkbox" id="irlandes" name="irlandes" value="Irlandês" class="stylequestions">  
+                                    <label for="irlandes"> Irlandês</label>
+                                </p>
+                                <p>
+                                    Em que ano nasceu o atual rei do Reino Unido? (02/2023)
+                                </p>
+                                <p>
+                                    <label for="Nascimento" class="stylequestions"> Data de Nascimento: </label>
+                                    <input type="date" id="nascimento" name="nascimento" class="stylequestions2">
+                                </p>
+                                <p>
+                                    Qual é o tom de cor dos prédios da cidade?
+                                </p>
+                                <p>
+                                    <label for="cor" class="stylequestions">Cor: </label>
+                                    <input type="color" id="cor" name="cor" value="#000000" class="stylequestions2">
+                                </p>
+                                <p>
+                                    Qual a área total de Edimburgo? (km^2)
+                                </p>
+                                <p>
+                                    <label for="area" class="stylequestions">Área Total: </label>
+                                    <input type="number" id="area" name="area" min="100" max="300" class="stylequestions2">
+                                    <label> (100-300)</label>
+                                </p>
+                                <p>
+                                    Quantos monarcas governaram na altura da Dinastia de Stuart (restaurada)?
+                                </p>
+                                <p>
+                                    <label for="numero" class="stylequestions">Número de Monarcas:</label>
+                                    <input type="range" id="numero" name="numero" min="0" max="5" class="stylequestions2">
+                                    <label> (0-5)</label>
+                                </p>
+                                <p>
+                                    Quais destas atrações turistas não ficam em Edimburgo?
+                                </p>
+                                <p>
+                                    <select name="atracao">
+                                        <option value="royalmile">Royal Mile</option>
+                                        <option value="palacio">Palácio Holyroodhouse</option>
+                                        <option value="royalyatch">Royal Yatch Britannia</option>
+                                        <option value="georgesquare">George Square</option>
+                                    </select>
+                                </p>
+                                <p>
+                                    Em que ano o festival de Edimburgo foi criado?
+                                </p>
+                                <p>
+                                    <label class="stylequestions"> Ano: </label>
+                                    <input list="festival" name="festival" class="stylequestions2">
+                                    <datalist id="festival">
+                                        <option value="1945">
+                                        <option value="1946">
+                                        <option value="1947">
+                                    </datalist>
+                                </p>
+                                <p>
+                                    O que achas sobre Edimburgo?
+                                </p>
+                                <p>
+                                    <textarea name="mensagem" rows="10" cols="40" class="stylequestions">  
+                                    </textarea>
+                                </p>
+                                </fieldset>
+                            </fieldset>
+                        </fieldset>
+                        <p>
+                            <input type="submit" value="Submit">
+                        </p>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <aside>
+        <img src="images/edimburgo.jpg" alt="Edimburgo">
+        </aside>
+        <footer>
+            <p>Bruno Miguel Soares - a22106424 | Universidade Lusófona de Humanidades e Tecnologias - 2022/2023</p>
+        </footer>
+    </body>
+</html>

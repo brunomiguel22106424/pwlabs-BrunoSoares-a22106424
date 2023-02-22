@@ -7,38 +7,8 @@
       <meta name="author" content="Bruno Soares">
       <meta name="description" content="Website sobre Edimburgo">
       <meta name="keywords" content="edin">
+      <link rel="stylesheet" href="style.css">
       <style>
-        .header {
-            background-color: #c5c5c5;
-            position: relative;
-            height: auto;
-            width: auto;
-            border-bottom: 2px solid #33362e;
-            }
-        .footer {
-          background-color: #c5c5c5;
-          position: relative;
-          padding: 1px 0px 1px 0px;
-          margin-bottom: auto;
-          margin-left: -10px;
-          margin-right: -8px;
-          border-top: 2px solid #33362e;
-        }
-        .footerpadding {
-          padding-left: 100px;
-        }
-        .center{
-          margin-left: auto;
-          margin-right: auto;
-        }
-        body {
-          text-align: center;
-          background-color: #f7f2f2
-        }
-        h1 {
-          padding: 5px;
-          text-align: center;
-        }
         table, td, th {
           border-collapse: collapse;
           border: 1px solid #33362e;
@@ -48,55 +18,75 @@
         th{
           text-align: center;
         }
+        tr:nth-child(even) {
+          background-color: #ebebeb;
+        }
       </style>
     </head>
     <body>
-      <div class="header">
+      <header class="header">
         <h1>Edimburgo</h1>
-      </div>
-      <h2><u>Info</u></h2>
+    </header>
+    <nav>
+      <ul>
+          <li>
+              <a href="index.html">Introdução</a>
+              <a href="local.html">Localização</a>
+              <a href="multimedia.html">Multimedia</a>
+              <b><a href="info.html">Informação</a></b>
+              <a href="quizz.html">Quizz</a>
+          </li>
+      </ul>
+    </nav>
+    <main>
+      <section>
+          <h2>Informação</h2>
+          <article>
+              <h3>Capital da Escócia</h3>
+              <p>
+                <center>
+                  <table>
+                    <tr>
+                      <th><u>Atrações</u></th>
+                      <th><u>Comidas</u></th>
+                      <th><u>Produtos</u></th>
+                    </tr>
+                    <tr>
+                      <td>Castelo de Edimburgo</td>
+                      <td>Haggis</td>
+                      <td>Kilt</td>
+                    </tr>
+                    <tr>
+                      <td>Royal Mile</td>
+                      <td>Black Pudding</td>
+                      <td>Whisky</td>
+                    </tr>
+                    <tr>
+                      <td>Palácio Holyroodhouse</td>
+                      <td>Stovies</td>
+                      <td>Quaich</td>
+                    </tr>
+                    <tr>
+                      <td>National Museum of Scotland</td>
+                      <td>Fish & Chips</td>
+                      <td>Chá</td>
+                    </tr>
+                    <tr>
+                      <td>Holyrood Park & Arthur’s Seat</td>
+                      <td>Scotch broth</td>
+                      <td>Tartan</td>
+                    </tr>
+                  </table>
+                </center>
+              </p>
+          </article>
+      </section>
+    </main>
+    <aside>
       <img src="images/edimburgo.jpg" alt="Edimburgo">
-      <p>Capital da Escócia</p>
-      <p>
-        <table class="center">
-          <tr>
-            <th><u>Atrações</u></th>
-            <th><u>Comidas</u></th>
-            <th><u>Produtos</u></th>
-          </tr>
-          <tr>
-            <td>Castelo de Edimburgo</td>
-            <td>Haggis</td>
-            <td>Kilt</td>
-          </tr>
-          <tr>
-            <td>Royal Mile</td>
-            <td>Black Pudding</td>
-            <td>Whisky</td>
-          </tr>
-          <tr>
-            <td>Palácio Holyroodhouse</td>
-            <td>Stovies</td>
-            <td>Quaich</td>
-          </tr>
-          <tr>
-            <td>National Museum of Scotland</td>
-            <td>Fish & Chips</td>
-            <td>Chá</td>
-          </tr>
-          <tr>
-            <td>Holyrood Park & Arthur’s Seat</td>
-            <td>Scotch broth</td>
-            <td>Tartan</td>
-          </tr>
-        </table>
-      </p>
-      <footer class="footer">
-        <p>
-            <b><a class="footerpadding" href="index.html">Introdução</a></b>
-            <a class="footerpadding" href="local.html">Localização</a>
-            <a class="footerpadding" href="multimedia.html">Multimedia</a>
-            <a class="footerpadding" href="info.html">Informação</a>
-        </footer>
+    </aside>
+    <footer>
+        <p>Bruno Miguel Soares - a22106424 | Universidade Lusófona de Humanidades e Tecnologias - 2022/2023</p>
+    </footer>
     </body>
 </html>
