@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt">
+    <head>
+        <title>HTML5-CSS</title>
+        <link rel="icon" href="/images/cidade.ico">
+        <meta charset="utf-8">
+        <meta name="author" content="Bruno Soares">
+        <meta name="description" content="Website sobre Edimburgo">
+        <meta name="keywords" content="edin">
+        <link rel="stylesheet" href="estilos.css">
+        <style>
+        .main1{
+            width: 75%;
+            float:left;
+            margin-bottom:10px;
+        }
+        .section1{
+            background-color:#bbbbbb;
+            padding:5px;
+            margin-top:10px;
+            margin-bottom:10px;
+            text-align: justify;                
+            float: left;
+            width: 47%;
+
+        }
+        .section2{
+            background-color:#bbbbbb;
+            padding:5px;
+            margin-top:10px;
+            margin-bottom:10px;
+            text-align: justify;
+            float: right;
+            width: 47%;
+        }
+        .aside1{
+            width:22%;
+            float:right;
+            margin: 10px;
+        }
+        </style>
+    </head>
+    <body>
+        <header class="header">
+            <h1>Edimburgo</h1>
+        </header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Introdução</a>
+                    <a href="local.html">Localização</a>
+                    <a href="multimedia.html">Multimedia</a>
+                    <a href="info.html">Informação</a>
+                    <a href="quizz.html">Quizz</a>
+                    <b><a href="html5-css.html">HTML5-CSS</a></b>
+                </li>
+            </ul>
+        </nav>
+        <main class="main1"> 
+            <section class="section1">
+                <h2>Introdução ao HTML5</h2>
+                <article>
+                    <h3>O que é?</h3>
+                    <p>
+                        O HTML é uma linguagem usada para a publicação de conteúdo (texto, imagens, vídeos, áudio) na web.
+                        O HTML5 é a nova versão e um dos seus principais objetivos é facilitar a manipulação dos elementos, 
+                        possibilitando o desenvolvedor modificar as características dos objetos de forma não intrusiva.
+                        O HTML5 fornece ferramentas para o CSS e o Javascript fazerem seu trabalho da melhor possível de 
+                        forma que um web site ou aplicação continue leve e funcional.
+                    </p>
+                    <p>
+                        <center>
+                            <table>
+                              <tr>
+                                <th><u>Elementos Semânticos</u></th>
+                                <th><u>Elementos Usados</u></th>
+                                <th><u>Explicação</u></th>
+                              </tr>
+                              <tr>
+                                <td>header</td>
+                                <td>&#10003;</td>
+                                <td>Usei no cabeçalho</td>
+                              </tr>
+                              <tr>
+                                <td>nav</td>
+                                <td>&#10003;</td>
+                                <td>Usei no menu de navegação</td>
+                              </tr>
+                              <tr>
+                                <td>main</td>
+                                <td>&#10003;</td>
+                                <td>Usei para a parte principal do site</td>
+                              </tr>
+                              <tr>
+                                <td>article</td>
+                                <td>&#10003;</td>
+                                <td>Usei para dividir o main em pedaços</td>
+                              </tr>
+                              <tr>
+                                <td>section</td>
+                                <td>&#10003;</td>
+                                <td>Usei para dividir o article em secções</td>
+                              </tr>
+                              <tr>
+                                <td>aside</td>
+                                <td>&#10003;</td>
+                                <td>Usei para as imagens</td>
+                              </tr>
+                              <tr>
+                                <td>footer</td>
+                                <td>&#10003;</td>
+                                <td>Usei para o rodapé</td>
+                              </tr>
+                            </table>
+                          </center>
+                    </p>
+                </article>
+            </section>
+            <section class="section2">
+                <h2>Introdução ao CSS</h2>
+                <article>
+                    <h3>O que é?</h3>
+                    <p>
+                        CSS é a sigla para Cascading Style Sheets, ou seja, Folhas de Estilo em Cascatas. É uma maneira de dar estilo ao código criado por 
+                        linguagens como HTML, por exemplo. De forma prática, ela funciona como uma camada de personalização ao conteúdo visível.
+                    </p>
+                    <p>
+                        <center>
+                            <table>
+                              <tr>
+                                <th><u>Elementos Semânticos</u></th>
+                                <th><u>Elementos Usados</u></th>
+                                <th><u>Explicação</u></th>
+                              </tr>
+                              <tr>
+                                <td>universal</td>
+                                <td>&#10003;</td>
+                                <td>O seletor universal aplica o estilo a todos os elementos da página. Usei para a fonte de letra.</td>
+                              </tr>
+                              <tr>
+                                <td>tipo</td>
+                                <td>&#10003;</td>
+                                <td>O seletor de tipo usa o nome do marcador a estilizar. Usei para estilizar os elementos dos marcadores.</td>
+                              </tr>
+                              <tr>
+                                <td>classe</td>
+                                <td>&#10003;</td>
+                                <td>O seletor de classe associa um nome a um estilo. Usei para dar um estilo especifico a um elemento do marcador.</td>
+                              </tr>
+                              <tr>
+                                <td>id</td>
+                                <td>&#10060;</td>
+                                <td>O atributo id permite identificar univocamente um elemento
+                                    do HTML. Não usei.</td>
+                              </tr>
+                              <tr>
+                                <td>atributo</td>
+                                <td>&#10003;</td>
+                                <td>Seletores que se aplicam a atributos de elementos. Usei para dar estilo a alguns inputs do Quizz.</td>
+                              </tr>
+                              <tr>
+                                <td>pseudo-classe</td>
+                                <td>&#10003;</td>
+                                <td>Seletor associado ao estado de um elemento. Usei para hiperligações</td>
+                              </tr>
+                              <tr>
+                                <td>pseudo-elemento</td>
+                                <td>&#10003;</td>
+                                <td>Identificam elementos em determinado estado, na estrutura do documento. Usei para personalizar a tabela</td>
+                              </tr>
+                            </table>
+                          </center>
+                    </p>
+                </article>
+            </section>
+        </main>
+        <aside class="aside1">
+            <p>
+                <img src="images/edimburgo.jpg" alt="Edimburgo">
+            </p>
+            <p>
+                <img src="images/edimburgo.png" alt="Edimburgo">
+            </p>
+        </aside>
+        <footer>
+            <p>Bruno Miguel Soares - a22106424 | Universidade Lusófona de Humanidades e Tecnologias - 2022/2023</p>
+        </footer>
+    </body>
+</html>
