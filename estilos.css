@@ -43,13 +43,22 @@ nav ul li a{
 	text-align:center;
 	padding: 1px 30px 1px 30px;
 	text-decoration: none;
-
 }
 
 nav ul li a:hover{
     font-size: 16px;
-    color: #f0e9e9;
 }
+
+nav ul li a:active{
+    color: #bad8ff;
+}
+
+
+nav ul li a:hover::after{
+	content: " 👈🏻";
+ }
+
+
 
 main{
 	width: 640px;
@@ -96,18 +105,25 @@ h2{
     text-decoration: underline;
 }
 
+h3::first-letter {
+	color: black;
+	font-size: x-large;
+}
+
 table, td, th {
 	border-collapse: collapse;
 	border: 1px solid #33362e;
 	text-align: left;
 	padding: 5px;;
-  }
-  th{
+}
+
+th{
 	text-align: center;
-  }
-  tr:nth-child(even) {
+}
+
+tr:nth-child(even) {
 	background-color: #ebebeb;
-  }
+}
 
 .stylequestions{
     margin-left: 20px;
@@ -117,10 +133,20 @@ table, td, th {
     margin-left: 5px;
 }
 
-.header {
+.header{
     background-color:#11233b;
 	color: white;
 	padding: 10px 10px;
 }
+
+.fieldset1{
+	background-color:#f3f3f3;
+}
+
+.fieldset2{
+	background-color:#f9f9f9;
+}
+
+
 
 

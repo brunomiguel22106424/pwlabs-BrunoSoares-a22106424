@@ -40,6 +40,10 @@
             input[type=submit]:hover {
                 background-color: #6d99cb;
             }
+            div > p {
+                text-decoration-line: underline;
+                text-decoration-color: #4179c3;
+            }
         </style>
     </head>
     <body>
@@ -63,21 +67,23 @@
                 <h2>Quizz</h2>
                 <article>
                     <form method="POST" action="mailto: brunomiguel.bcs@gmail.com" enctype="multipart/form-data">
-                        <fieldset>
+                        <fieldset class="fieldset1">
                         <legend>Quizz sobre Edimburgo:</legend>
                         <p>
                             Este quiz terá várias perguntas sobre a cidade! O objetivo é responder ao quiz e ver o quão conhece a cidade :)
                         </p>
-                        <fieldset>
+                        <fieldset class="fieldset2">
                             <legend>Info</legend>
-                            <p>Nome: <br>
-                                <input type="text" name="nome" placeholder="Insira nome"></p>
-                            <p>Apelido: <br>
-                                <input type="text" name="apelido" placeholder="Insira apelido"></p>
-                            <p>Email: <br>
-                                <input type="email" name= "email" height="100px" placeholder="Insira email"></p>
+                            <div>
+                                <p>Nome: <br>
+                                    <input type="text" name="nome" placeholder="Insira nome"></p>
+                                <p>Apelido: <br>
+                                    <input type="text" name="apelido" placeholder="Insira apelido"></p>
+                                <p>Email: <br>
+                                    <input type="email" name= "email" height="100px" placeholder="Insira email"></p>
+                            </div>
                             </fieldset>
-                            <fieldset >
+                            <fieldset class="fieldset2">
                                 <legend>Perguntas</legend>
                                 <p>
                                     Em qual país fica Edimburgo?
@@ -159,6 +165,14 @@
                                 </p>
                                 <p>
                                     <textarea name="mensagem" rows="10" cols="40" class="stylequestions">  
+                                    </textarea>
+                                </p>
+                                <p>
+                                    O que vês nesta Imagem?
+                                </p>
+                                <p>
+                                    <input class="stylequestions" type="image" id="image" alt="Castelo Edimburgo" src="images/casteloedimburgo.jpg">
+                                    <textarea name="mensagem" rows="10" cols="50" class="stylequestions">  
                                     </textarea>
                                 </p>
                                 </fieldset>

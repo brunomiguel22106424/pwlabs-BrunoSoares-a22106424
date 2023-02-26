@@ -9,6 +9,16 @@
         <meta name="keywords" content="edin">
         <link rel="stylesheet" href="estilos.css">
         <style>
+            .linkbutton {
+                color: black;
+                padding: 14px 25px;
+                text-decoration:underline;
+                text-align: center;
+                display: inline-block;
+            }
+            main section a:hover{
+                font-size: 16px;
+            }
         </style>
     </head>
     <body>
@@ -30,14 +40,82 @@
         <main>
             <section>
                 <h2>Multimedia</h2>
+                <center>
+                    <a href="#video" class="linkbutton"> Ir para o Video</a>
+                    <a href="#foto" class="linkbutton"> Ir para Fotografias</a>
+                    <a href="#poema" class="linkbutton"> Ir para o Poema</a>
+                </center>
                 <article>
-                    <h3>Capital da Escócia</h3>
-                    <p>
-                    <center>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/zhtg9XgVwuM"
-                        title="Video de Edimburgo" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
-                        encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </center>
+                    <h3 id="video">Video</h3>
+                    <div style="padding-left: 20px;">
+                        <iframe  width="600" height="400" style="border:3px double black;" src="https://www.youtube.com/embed/zhtg9XgVwuM" 
+                            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <h3 id="foto">Fotografias</h3>
+                    <div style="display:inline-block;padding-left: 20px;">
+                        <iframe  src="images/edimburgo_grande.png" width="600" height="400" style="border:3px double black;" name="foto">
+                        </iframe>
+                    </div>
+                    <div style="display:inline-block;vertical-align:top;">
+                        <p>
+                            <h4 style="padding-left: 15px;">Veja as fotografias de:</h4>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_grande.png" target="foto"> Edimburgo Grande1</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_pequena.png" target="foto"> Edimburgo Pequena1</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_grande2.png" target="foto"> Edimburgo Grande2</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_pequena2.png" target="foto"> Edimburgo Pequena2</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_grande3.png" target="foto"> Edimburgo Grande3</a>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <a href="images/edimburgo_pequena3.png" target="foto"> Edimburgo Pequena3</a>
+                                </li>
+                            </ul>
+                        </p>
+                    </div>
+                    <h3 id="poema">Poema</h3>
+                    <div style="padding-left: 20px;">
+                        <b><p style="font-size: medium;">From a Window in Princes Street</p></b>
+                        <p style="padding-left: 5px;">by William Ernest Henley</p>
+                        <p style="text-align: center;">
+                            <i>
+                                Acima dos Penhascos que desaparecem e escurecem<br>
+                                Começa o joelho nu de Arthur's Seat;<br>
+                                Erguendo-se alto contra a flor da tarde,<br>
+                                A Cidade Velha ergue-se, rua após rua;<br>
+                                Com lâmpadas enfeitadas com joias, bem à frente,<br>
+                                Como paredes em forma de rampa as casas se inclinam,<br>
+                                Todas com pináculos, cúpulas e torres,<br>
+                                Abandonadas ao verde escuro do vale;<br>
+                                Disposto em misteriosa desordem,<br>
+                                O Castelo, ameaçador e austero,<br>
+                                Paira através do final do dia;<br>
+                                E no crepúsculo prateado você ouve,<br>
+                                Reverberando do penhasco e da cicatriz,<br>
+                                Cornetas ousadas soprando pontos de guerra.
+                            </i>
+                        </p>
+                    </div>
                 </article>
             </section>
         </main>
