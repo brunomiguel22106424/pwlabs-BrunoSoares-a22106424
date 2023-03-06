@@ -1,0 +1,297 @@
+* {box-sizing: border-box; padding: 0; margin: 0;}
+
+header { 
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+header.layout1,footer.layout1{
+    background-color: #8d0000;
+}
+
+header.layout2,footer.layout2{
+    background-color: #080076;
+}
+
+header.layout3,footer.layout3{
+    background-color: #087600;
+}
+
+header.layout4,footer.layout4{
+    background-color: #9fa206;
+}
+
+nav { 
+    grid-area: nav; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+nav.layout1,aside.layout1{
+    background-color: #bc1212;
+}
+
+nav.layout2,aside.layout2{
+    background-color: #2319b2;
+}
+
+nav.layout3{
+    background-color: #21b219;
+}
+
+nav.layout4{
+    background-color: #beb91b;
+}
+
+aside.layout4{
+    background-color: #e9e328;
+}
+
+main { 
+    grid-area: main; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main.layout1{
+    background-color: #f1e2e2;
+}
+
+
+main.layout2{
+    background-color: #d3d1f9;
+}
+
+main.layou4{
+    background-color: #d3d1f9;
+}
+
+
+.layout3img{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout4img{
+    position: relative; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.layout3img::before {    
+    content: "";
+    background-image: url(https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/Zugpsitze_mountain.jpg?crop=0%2C176%2C3008%2C1654&wid=4000&hei=2200&scl=0.752);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+.layout4img::before {    
+    content: "";
+    background-image: url(https://images.ecycle.com.br/wp-content/uploads/2021/04/30014229/sol-1.jpg);
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.6;
+}
+
+
+aside { 
+    grid-area: aside; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+footer {
+    grid-area: footer; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+	padding: 5px 20px;
+    position: relative;
+}
+
+footer.layout3 p{
+    font-size: 1vw;
+}
+
+
+h1{
+    color: white;
+}
+
+
+.grid-container1 {
+    display: grid;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 10% 3fr 20%;
+    grid-template-rows: 15% 1fr 50px;
+    grid-template-areas:
+    'header header header'
+    'nav main aside '
+    'footer footer footer';
+}
+
+.grid-container2 {
+    display: grid;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 5% 3fr 15%;
+    grid-template-rows: 12% 1fr 60px;
+    grid-template-areas:
+    'nav header header'
+    'nav main aside '
+    'nav footer footer';
+}
+
+.grid-container3 {
+    display: grid;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 20% 1fr 1fr 10%;
+    grid-template-rows: 10% 3fr 10%;
+    grid-template-areas:
+    'header header header header'
+    'nav main main main '
+    'footer main main main';
+}
+
+.grid-container4 {
+    display: grid;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 8% 25% 2fr;
+    grid-template-rows: 10% 3fr 10%;
+    grid-template-areas:
+    'header header header header'
+    'nav aside main main '
+    'footer footer footer footer';
+}
+
+
+main div#vermelho p{
+    font-size: xx-large;
+    color: #8d0000;
+
+}
+
+main div#azul p{
+    font-size: xx-large;
+    color: #080076;
+
+}
+
+main div#verde p{
+    position: relative;
+    font-size: xx-large;
+    color: #087600;
+}
+
+main div#amarelo p{
+    position: relative;
+    font-size: xx-large;
+    color: #9fa206;
+}
+
+
+ul{
+    display: flex;
+    width: 20vw;
+}
+
+li a {
+    display: block;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+    width: 10vw;
+    text-align: center;
+}
+
+li#layout2 a {
+    display: block;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+    width: 5vw;
+    text-align: center;
+}
+
+li#layout3 a {
+    display: block;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+    width: 20vw;
+    text-align: center;
+}
+
+li#layout4 a {
+    display: block;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+    width: 8vw;
+    text-align: center;
+}
+
+
+li#layout1 a:hover{
+    color: rgb(238, 224, 224);
+    background-color: #ad0707; 
+    border-bottom:1px solid black;
+    font-size: 26px;
+}
+
+
+li#layout2 a:hover{
+    color: rgb(238, 224, 224);
+    background-color: #1208a1;
+    border-bottom:1px solid black; 
+    font-size: 26px;
+}
+
+
+li#layout3 a:hover{
+    color: rgb(238, 224, 224);
+    background-color: #24a108;
+    border-bottom:1px solid black; 
+    font-size: 26px;
+}
+
+li#layout4 a:hover{
+    color: rgb(238, 224, 224);
+    background-color: #9fa206;
+    border-bottom:1px solid black; 
+    font-size: 26px;
+}
+
+li a:visited {
+    color: white;
+}
+
