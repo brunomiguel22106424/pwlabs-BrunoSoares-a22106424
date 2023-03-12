@@ -89,7 +89,7 @@ nav ul li a:hover{
 }
 
 .capitais img{
-    border-radius: 20px 0 0 20px;
+    border-radius: 20px 0 20px;
     height: 100%;
 }
 
@@ -102,6 +102,42 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
 }
+
+div#circulos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circulo  {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: #292c49;
+    margin: 20px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: xx-large;
+}
+
+div#circulo img{
+    position: absolute;
+    clip: rect(0px,200px,200px,0px);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+div#circulo img:hover{
+    visibility: hidden;
+}   
+    
+
+
+    
+
+
 
 
 

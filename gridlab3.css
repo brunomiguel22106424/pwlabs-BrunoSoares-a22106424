@@ -3,6 +3,8 @@
 header { 
     grid-area: header;
     display: flex;
+    position: -webkit-sticky;
+    position: sticky;
     align-items: center;
     justify-content: center; 
 }
@@ -21,6 +23,10 @@ header.layout3,footer.layout3{
 
 header.layout4,footer.layout4{
     background-color: #9fa206;
+}
+
+header.layout5,footer.layout5{
+    background-color: #191919;
 }
 
 nav { 
@@ -46,28 +52,25 @@ nav.layout4{
     background-color: #beb91b;
 }
 
-aside.layout4{
-    background-color: #e9e328;
+nav.layout5,aside.layout5{
+    background-color: #252525;
 }
 
 main { 
     grid-area: main; 
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 main.layout1{
     background-color: #f1e2e2;
 }
 
-
 main.layout2{
     background-color: #d3d1f9;
 }
 
-main.layou4{
-    background-color: #d3d1f9;
+main.layout5{
+    background-color: rgb(207, 207, 207)
 }
 
 
@@ -113,8 +116,10 @@ main.layou4{
 aside { 
     grid-area: aside; 
     display: flex;
-    align-items: center;
-    justify-content: center; 
+}
+
+aside.layout4{
+    background-color: #e9e328;
 }
 
 footer {
@@ -131,6 +136,10 @@ footer.layout3 p{
     font-size: 1vw;
 }
 
+footer.layout5 p{
+    font-size: 1vw;
+}
+
 
 h1{
     color: white;
@@ -139,10 +148,9 @@ h1{
 
 .grid-container1 {
     display: grid;
-    grid-gap: 1px;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 10% 3fr 20%;
+    grid-template-columns: 10% 65vw 1fr;
     grid-template-rows: 15% 1fr 50px;
     grid-template-areas:
     'header header header'
@@ -189,12 +197,19 @@ h1{
     'footer footer footer footer';
 }
 
-
-main div#vermelho p{
-    font-size: xx-large;
-    color: #8d0000;
-
+.grid-container5 {
+    display: grid;
+    grid-gap: 1px;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 10% 2fr 1fr 17%;
+    grid-template-rows: 10% 3fr ;
+    grid-template-areas:
+    'header header footer footer'
+    'nav main main aside '
+    'nav main main aside';
 }
+
 
 main div#azul p{
     font-size: xx-large;
@@ -214,6 +229,11 @@ main div#amarelo p{
     color: #9fa206;
 }
 
+main div#preto p{
+    position: relative;
+    font-size: xx-large;
+    color: #191919;
+}
 
 ul{
     display: flex;
@@ -260,6 +280,16 @@ li#layout4 a {
     text-align: center;
 }
 
+li#layout5 a {
+    display: block;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
+    color: white;
+    text-decoration: none;
+    width: 10vw;
+    text-align: center;
+}
+
 
 li#layout1 a:hover{
     color: rgb(238, 224, 224);
@@ -291,7 +321,69 @@ li#layout4 a:hover{
     font-size: 26px;
 }
 
+li#layout5 a:hover{
+    color: rgb(238, 224, 224);
+    background-color: #191919;
+    border-bottom:1px solid white; 
+    font-size: 26px;
+}
+
 li a:visited {
     color: white;
 }
+
+main div#a{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#a img{
+    margin-left: 5vw;
+    height:300px;
+    width: 230px;
+    box-shadow: 5px 5px 5px red;
+}
+
+main div#b{
+    display: flex;
+    position: relative;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#c{
+    position: absolute;
+    width: 70%;
+    margin-left: -5vw;
+}
+
+main div#c h2{
+    margin-bottom: 20px;
+    color: #8d0000;
+}
+
+aside div#d{
+    width: 25vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+aside div#d h3{
+    color:white;
+    position: absolute;
+    top:5vw;
+    font-size: xx-large;
+}
+
+aside div ul{
+    display: block;
+    position: absolute;
+    color: white;
+}
+
 
