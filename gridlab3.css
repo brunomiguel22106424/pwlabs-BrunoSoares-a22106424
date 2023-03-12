@@ -70,7 +70,7 @@ main.layout2{
 }
 
 main.layout5{
-    background-color: rgb(207, 207, 207)
+    background-color: rgb(52, 52, 52)
 }
 
 
@@ -160,15 +160,14 @@ h1{
 
 .grid-container2 {
     display: grid;
-    grid-gap: 1px;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 5% 3fr 15%;
-    grid-template-rows: 12% 1fr 60px;
+    grid-template-columns: 5% 1fr 1fr 25%;
+    grid-template-rows: 14% 1fr 50px;
     grid-template-areas:
-    'nav header header'
-    'nav main aside '
-    'nav footer footer';
+    'nav header header header'
+    'nav main main aside '
+    'nav footer footer footer';
 }
 
 .grid-container3 {
@@ -202,7 +201,7 @@ h1{
     grid-gap: 1px;
     width: 100vw;
     height: 100vh;
-    grid-template-columns: 10% 2fr 1fr 17%;
+    grid-template-columns: 10% 2fr 1fr 20%;
     grid-template-rows: 10% 3fr ;
     grid-template-areas:
     'header header footer footer'
@@ -332,21 +331,22 @@ li a:visited {
     color: white;
 }
 
-main div#a{
+main div#flexl1_imagem{
     display: flex;
     width: 40%;
     align-items: center;
     justify-content: center;
 }
 
-main div#a img{
+main div#flexl1_imagem img{
+    display: flex;
     margin-left: 5vw;
-    height:300px;
-    width: 230px;
+    height:270px;
+    width: 200px;
     box-shadow: 5px 5px 5px red;
 }
 
-main div#b{
+main div#relative_containerl1{
     display: flex;
     position: relative;
     width: 60%;
@@ -354,18 +354,18 @@ main div#b{
     justify-content: center;
 }
 
-main div#c{
+main div#absolute_containerl1{
     position: absolute;
     width: 70%;
     margin-left: -5vw;
 }
 
-main div#c h2{
+main div#absolute_containerl1 h2{
     margin-bottom: 20px;
     color: #8d0000;
 }
 
-aside div#d{
+aside div#relative_container2l1{
     width: 25vw;
     display: flex;
     position: relative;
@@ -373,7 +373,7 @@ aside div#d{
     justify-content: center;
 }
 
-aside div#d h3{
+aside div#relative_container2l1 h3{
     color:white;
     position: absolute;
     top:5vw;
@@ -384,6 +384,115 @@ aside div ul{
     display: block;
     position: absolute;
     color: white;
+}
+
+
+main div#flexl2_imagem{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#flexl2_imagem img{
+    display: flex;
+    margin-left: 5vw;
+    height:270px;
+    width: 200px;
+    box-shadow: 5px 5px 5px blue;
+}
+
+main div#relative_containerl2{
+    display: flex;
+    position: relative;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#absolute_containerl2{
+    position: absolute;
+    width: 70%;
+    margin-left: -5vw;
+}
+
+main div#absolute_containerl2 h2{
+    margin-bottom: 20px;
+    color: #00158d;
+}
+
+aside div#relative_container2l2{
+    width: 24vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+aside div#relative_container2l2 h3{
+    color:white;
+    position: absolute;
+    top:5vw;
+    font-size: xx-large;
+}
+
+main div#flexl5_imagem{
+    display: flex;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#flexl5_imagem img{
+    display: flex;
+    margin-left: 5vw;
+    height:270px;
+    width: 200px;
+    box-shadow: 5px 5px 5px #191919;
+}
+
+main div#relative_containerl5{
+    display: flex;
+    position: relative;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+
+main div#absolute_containerl5{
+    position: absolute;
+    width: 70%;
+    margin-left: -5vw;
+}
+
+main div#absolute_containerl5 h2{
+    margin-bottom: 20px;
+    color: white;
+}
+
+main div#absolute_containerl5 p{
+    color: white;
+}
+
+aside div#relative_container2l5{
+    width: 24vw;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+}
+
+aside div#relative_container2l5 h3{
+    color:white;
+    position: absolute;
+    top:5vw;
+    font-size: xx-large;
+}
+
+aside div#relative_container2l5 ul{
+    width: 15vw;
+    margin-left: 30px;
 }
 
 
