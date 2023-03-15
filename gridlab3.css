@@ -210,6 +210,8 @@ h1{
 }
 
 
+
+
 main div#azul p{
     font-size: xx-large;
     color: #080076;
@@ -483,6 +485,7 @@ aside div#relative_container2l5{
 
 }
 
+
 aside div#relative_container2l5 h3{
     color:white;
     position: absolute;
@@ -496,3 +499,110 @@ aside div#relative_container2l5 ul{
 }
 
 
+@media only screen and (max-width: 600px) {
+    .grid-container1,.grid-container2,.grid-container3,.grid-container4,.grid-container5 {
+        display: grid;
+        width: 100vw;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 9vw 80vh 80vh 7vw;
+        grid-template-areas:
+        'header'
+        'nav'
+        'main'
+        'aside'
+        'footer';
+    }
+
+    nav.layout1,nav.layout2{
+        width:100%;
+    }
+
+    nav.layout1 ul,nav.layout2 ul{
+        width: 100vw;
+        display: flex;
+
+    }
+
+    nav.layout1 ul li#layout1{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    nav.layout2 ul li#layout2{
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 5vw;
+        padding-right: 4vw;
+
+    }
+    
+    
+    li#layout1 a{
+        display: inline;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        
+    }
+
+    li#layout2 a {
+        display: inline;
+        font-size: 25px;
+        color: white;
+        text-decoration: none;
+        padding: 2vw 6vw 2vw 4vw;
+    }
+
+    li#layout1 a:first-child{
+        text-align: center;
+        padding: 2vw 4vw 2vw 4vw;
+    }
+
+    li#layout2 a:first-child {
+        text-align: center;
+        padding: 2vw 3vw 2vw 3vw;
+    }
+
+    aside div#relative_container2l1{
+        width: 100%;
+    }
+
+    aside div#relative_container2l1 h3{
+        display: flex;
+        color:white;
+        position: absolute;
+        top:5vw;
+        left: 30vw;
+        
+    }
+
+    aside div#relative_container2l1 ul{
+        width: 50%;
+        margin-bottom: -190px;
+        margin-top: -150px;
+    }
+
+    aside div#relative_container2l2{
+        width: 100%;
+    }
+
+    aside div#relative_container2l2 h3{
+        display: flex;
+        color:white;
+        position: absolute;
+        top:5vw;
+        left: 30vw;
+    }
+
+    aside div#relative_container2l2 ul{
+        width: 50%;
+    }
+    
+}
