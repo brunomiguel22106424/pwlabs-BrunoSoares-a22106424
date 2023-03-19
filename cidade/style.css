@@ -39,7 +39,7 @@ header div#edimburgo {
     font-family: Verdana, Tahoma, sans-serif;
     font-weight: bold;
     color: #d5e3eba8;
-    letter-spacing: 5px;
+    letter-spacing: 2px;
 }
 
 header nav {
@@ -48,7 +48,7 @@ header nav {
 }
 
 nav a {
-    padding: 0 3em;
+    padding: 0 1em;
     text-decoration: none;
     font-size: 1rem;
     color: lightgray;
@@ -129,7 +129,7 @@ nav a:hover{
 }
   
 .dropdown .dropbtn {
-    padding: 0 3em;
+    padding: 0 2em;
     text-decoration: none;
     font-size: 1rem;
     color: lightgray;
@@ -233,7 +233,229 @@ div.parallax {
    background-size: cover;
  }
  
- b {
-   color: dodgerblue;
+ .curiosidades-container1{
+    display: flex;
+    position: relative;
+    width: 100vw;
+    height:85vh;
  }
+
+ .curiosidadestitulo-container1{
+    display: flex;
+    position: absolute;
+    color: white;
+    margin-top: 1em;
+    margin-left: 1em;
+ }
+
+ .curiosidadesintro-container1{
+    display: flex;
+    position: absolute;
+    top: 8vh;
+    margin: 1vh;
+    margin-left: 2em;
+    color: white;
+ }
+ 
+
+ .texto1-container1{
+    display: flexbox;
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 15vh;
+    margin-top: 5vh;
+    max-width: 40vw;
+    max-height: 45vh;
+    margin-left: 1em;
+ }
+ 
+ div.imagem1-container1{
+    display: flex;
+    position: absolute;
+    top: 5vh;
+    left: 40vw;
+    right: 0;
+    width: 20vw;
+ }
+
+ div.texto1-container1 img{
+    height: 200px;
+ }
+
+ div.texto1-container1 source{
+    height: 200px;
+ }
+
+ .imagem-animacoes{
+    display: flexbox;
+    width: 40%;
+ }  
+
+.imagem1-animacoes{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+.imagem1-animacoes img{
+    display: flex;
+    position: absolute;
+    max-width:80%;
+    margin: 1vw;
+    height: 90%;
+    transition: width 2s, height 2s,transform 2s;
+}
+
+.imagem1-animacoes img:hover{
+    transform: rotate(180deg);
+    filter:hue-rotate(90deg)
+}
+
+.imagem2-animacoes{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    align-self: center;
+}
+
+.imagem2-animacoes img{
+    display: flex;
+    position: absolute;
+    max-width: 80%;
+    margin: 1vw;
+    height: 90%;
+    animation-name: mover;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes mover{
+    0% {left: 0px}
+    25% {left: 150px;filter: grayscale(100%)}
+    50% {left: 150px;filter: grayscale(100%)}
+    75% {left: 0px}
+    100% {left: 0px}
+}
+
+ .poema-animacoes{
+    display: flex;
+    position: relative;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .poema-abs-animacoes{
+    display:flexbox;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    font-size: 20px;
+ }
+
+ .quadra1{
+   display: flexbox;
+   position: absolute;
+   margin: 1vw;
+   top: 20%;
+   left: 25%;
+ }
+
+ .quadra1 > p:nth-child(2n - 1){
+    color: rgb(90, 196, 200);
+  }
+
+  .quadra1 > p:nth-child(2n):hover{
+    transform: translate(20px)
+  }
+
+  .quadra2 > p:nth-child(2n - 1){
+    color: rgb(90, 196, 200);
+  }
+
+  .quadra2 > p:nth-child(2n):hover{
+    transform: translate(20px)
+  }
+
+  .quadra3 > p:nth-child(2n - 1){
+    color: rgb(90, 196, 200);
+  }
+
+  .quadra3 > p:nth-child(2n):hover{
+    transform: translate(20px)
+  }
+
+
+ div.quadra1 > p:hover, div.quadra2 > p:hover,  div.quadra3 > p:hover{
+    background-color: rgba(106, 99, 171, 0.488);
+    color: rgb(236, 241, 241);
+  }
+
+ .quadra2{
+    display: flexbox;
+    position: absolute;
+    margin: 1vw;
+    top: 40%;
+    left: 25%;
+  }
+
+  .quadra3{
+    display: flexbox;
+    position: absolute;
+    margin: 1vw;
+    top: 60%;
+    left: 25%;
+  }
+
+ .svg-content{
+    display: flexbox;
+    position: relative;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .svg1-content{
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 34%;
+ }
+
+ .svg2-content{
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 33%;
+ }
+
+ .svg3-content{
+    display: flex;
+    position:relative;
+    width: 100%;
+    height: 33%;
+ }
+
+ .svg1-content svg circle{
+    animation-name: svg-anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+ }
+
+ @keyframes svg-anim{
+    0% {fill: #416dc6;}
+    25% {fill: #6b8ed5;}
+    50% {fill: #416dc6;}
+    75% {fill: #6b8ed5;}
+    100% {fill: #416dc6;}
+ }
+
+
   
